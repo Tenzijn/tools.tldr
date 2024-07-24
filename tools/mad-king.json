@@ -1,0 +1,22 @@
+{
+    "name": "MadKing",
+    "description": "This project was created as a proof of concept. A marriage of serverless frameworks and the techniques of researcher Daniel Grzelak for persistance in an AWS account.",
+    "tags": [
+        "penetration-testing",
+        "attack-platform",
+        "aws",
+        "serverless",
+        "python"
+    ],
+    "operating_systems": [
+        "linux",
+        "mac",
+        "windows"
+    ],
+    "license": "MIT",
+    "availability": [
+        "opensource"
+    ],
+    "github_url": "https://github.com/ThreatResponse/mad-king",
+    "url": "https://github.com/ThreatResponse/mad-king"
+}

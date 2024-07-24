@@ -1,0 +1,21 @@
+{
+    "name": "Prowler",
+    "description": "CIS benchmarks and additional checks for security best practices in AWS",
+    "tags": [
+        "cloud-security",
+        "security-auditing",
+        "aws",
+        "cis-benchmarks",
+        "bash"
+    ],
+    "operating_systems": [
+        "linux",
+        "mac"
+    ],
+    "license": "CC BY-NC-SA 4.0",
+    "availability": [
+        "opensource"
+    ],
+    "github_url": "https://github.com/toniblyx/prowler",
+    "url": "https://github.com/toniblyx/prowler"
+}

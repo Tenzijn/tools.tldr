@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Security Tools
 
-## Getting Started
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8015a3e2-1af7-4740-8944-6ef5e190d92a/deploy-status)](https://app.netlify.com/sites/tools-tldr-run/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://spdx.org/licenses/MIT.html)
+[![Twitter](https://img.shields.io/twitter/follow/tldrrun.svg?style=social&label=Follow)](https://twitter.com/tldrrun)
 
-First, run the development server:
+[https://tools.tldr.run](https://tools.tldr.run)
+
+Curated list of security tools for Hackers & Builders!
+
+[![Security Tools | https://tools.tldr.run](./security-tools.jpg)](https://tools.tldr.run)
+
+## Development & Setup
+
+- Navigate to the code directory and run the following commands to install packages and serve
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run serve
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Navigate to [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Docker based setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Run the following commands to setup using docker
 
-## Learn More
+```bash
+git clone https://github.com/tldrrun/tools.tldr.run.git
+cd tools.tldr.run
+docker build -t tldrrun/tools-tldr-run .
+docker run -d --name tools-tldr-run -p 1234:8080 tldrrun/tools-tldr-run
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Navigate to [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Tool Submission
 
-## Deploy on Vercel
+- The simplest way to contribute is adding new tools using [Google Form](https://forms.gle/yWbXkBtsDtqAqnTd6)
+- Else, you can also make a pull request by following below steps
+  - Fork the repository
+  - Add new tool under `tools` folder with new tool name as filename (Example: `docker.json`)
+  - The file schema should contain as follows. `name`, `description`, `tags`, `operating_system`, `availability` and `url` are mandatory
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```json
+{
+  "name": "Docker",
+  "description": "Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud.",
+  "tags": ["containers", "devops", "automation", "golang"],
+  "operating_systems": ["linux", "mac", "windows"],
+  "license": "Apache-2",
+  "availability": ["opensource", "free", "commercial"],
+  "github_url": "https://github.com/docker/docker-ce",
+  "url": "https://www.docker.com/"
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Submit the merge request
+- Happy contribution and thank you so much.
+
+## Thanks & Acknowledgements
+
+- [Varun A P](https://github.com/apvarun)
+- [Madhu Akula](https://github.com/madhuakula)

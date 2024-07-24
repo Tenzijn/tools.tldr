@@ -1,0 +1,23 @@
+{
+    "name": "Docker",
+    "description": "Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud.",
+    "tags": [
+        "containers",
+        "devops",
+        "automation",
+        "golang"
+    ],
+    "operating_systems": [
+        "linux",
+        "mac",
+        "windows"
+    ],
+    "license": "Apache-2",
+    "availability": [
+        "opensource",
+        "free",
+        "commercial"
+    ],
+    "github_url": "https://github.com/docker/docker-ce",
+    "url": "https://www.docker.com/"
+}
