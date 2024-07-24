@@ -23,7 +23,15 @@ async function fetchGithubData(githubUrl: string) {
   return { githubData, readmeData };
 }
 
-export default async function ToolPage({ params: { toolSlug } }) {
+type ToolPageProps = {
+  params: {
+    toolSlug: string;
+  };
+};
+
+export default async function ToolPage({
+  params: { toolSlug },
+}: ToolPageProps) {
   const toolData = await getTool(`${toolSlug}.json`);
   const { githubData, readmeData } = await fetchGithubData(toolData.github_url);
 
