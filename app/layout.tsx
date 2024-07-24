@@ -6,7 +6,7 @@ type RootLayoutProps = {
 };
 
 export const metadata = {
-  title: 'tools.tldr.run',
+  title: 'TLDR.run',
   description: 'A collection of useful tools for developers',
 };
 
