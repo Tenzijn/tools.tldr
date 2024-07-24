@@ -114,10 +114,12 @@ export default function ToolDetails({ toolData, githubData, readmeData }) {
             })}
           >
             <div
-              style={{ height: '600px', paddingTop: '20px' }}
+              style={{ height: '600px', paddingTop: '10px' }}
               data-katacoda-id='tldrrun/git-leaks'
               id='katacoda-scenario-1'
-            ></div>
+            >
+              Coming soon ...
+            </div>
           </div>
         </div>
       </div>
