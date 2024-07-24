@@ -1,4 +1,8 @@
+'use client';
+
 import { useState } from 'react';
+import Image from 'next/image';
+import logo from '@/assets/logo.png';
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +16,7 @@ const Nav = () => {
             title='Company'
             className='inline-flex items-center'
           >
-            <img src='/assets/logo.png' alt='tldr.run' className='w-8' />
+            <Image src={logo} alt='tldr.run' className='w-8' />
             <span className='ml-2 text-xl font-bold tracking-wide text-slate-100 uppercase'>
               TLDR
             </span>
@@ -72,11 +76,7 @@ const Nav = () => {
                         title='Company'
                         className='inline-flex items-center'
                       >
-                        <img
-                          src='/assets/logo.png'
-                          alt='tldr.run'
-                          className='w-8'
-                        />
+                        <Image src={logo} alt='tldr.run' className='w-8' />
                         <span className='ml-2 text-xl font-bold tracking-wide text-slate-800 uppercase'>
                           TLDR
                         </span>
