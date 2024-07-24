@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '@/components/Nav';
+import { Nav, Footer } from '@/components';
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -16,6 +16,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
       <body>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
