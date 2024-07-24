@@ -12,7 +12,7 @@ const Home = async () => {
       <section id='tools'>
         <h3 className='text-center font-bold text-2xl mt-4'>Featured Tools</h3>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 p-8'>
-          {featuredTools.map((tool) => (
+          {featuredTools.map((tool: any) => (
             <ToolCard key={tool.id} {...tool} />
           ))}
         </div>
