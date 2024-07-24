@@ -49,7 +49,7 @@ export default function ToolCard({
       </p>
       <div className='grid grid-cols-2 items-center text-center border-t opacity-0 group-hover:opacity-100 transition-opacity'>
         <Link
-          href={`/tool/${id}`}
+          href={`/${id}`}
           aria-label={name}
           title={`${name} tool page`}
           className='p-3 hover:bg-slate-100'

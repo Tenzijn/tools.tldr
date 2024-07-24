@@ -1,4 +1,3 @@
-import './globals.css';
 import { Hero } from '@/components';
 import { ToolCard } from '@/components/ui';
 import { getFeaturedTools, getTools } from '@/lib/tools';

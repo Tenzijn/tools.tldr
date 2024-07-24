@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, Footer } from '@/components';
 
+import '@/styles/globals.css';
+
 type RootLayoutProps = {
   children: React.ReactNode;
 };

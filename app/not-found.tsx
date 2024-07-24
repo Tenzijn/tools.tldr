@@ -1,5 +1,3 @@
-import './globals.css';
-
 const Error404 = () => {
   return (
     <section className='h-96 w-full flex flex-col justify-center items-center'>
