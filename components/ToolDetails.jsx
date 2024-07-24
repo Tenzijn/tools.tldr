@@ -11,8 +11,7 @@ const tabs = ['README', 'Playground'];
 export default function ToolDetails({ toolData, githubData, readmeData }) {
   const router = useRouter();
   const { query } = router;
-  const { tool } = toolData || {};
-  const { name, description, url, github_url = '' } = tool || {};
+  const { name, description, url, github_url = '' } = toolData || {};
 
   const [tabIndex, setTabIndex] = useState(0);
 

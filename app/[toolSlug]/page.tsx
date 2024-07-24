@@ -1,7 +1,7 @@
 import { getTool } from '@/lib/tools';
 import ToolDetails from '@/components/ToolDetails';
 
-async function fetchGithubData(githubUrl) {
+async function fetchGithubData(githubUrl: string) {
   const githubApiUrl = githubUrl.replace(
     'https://github.com/',
     'https://api.github.com/repos/'
@@ -25,7 +25,6 @@ async function fetchGithubData(githubUrl) {
 
 export default async function ToolPage({ params: { toolSlug } }) {
   const toolData = await getTool(`${toolSlug}.json`);
-  console.log(toolData);
   const { githubData, readmeData } = await fetchGithubData(toolData.github_url);
 
   return (
