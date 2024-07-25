@@ -30,7 +30,6 @@ export default function ToolDetails({ toolData, githubData, readmeData }) {
       newQuery.playground = '';
     }
 
-    // Construct the new URL with query parameters
     const newUrl = new URL(window.location.href);
     Object.keys(newQuery).forEach((key) => {
       if (newQuery[key] === undefined) {
