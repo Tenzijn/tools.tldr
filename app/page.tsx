@@ -1,5 +1,5 @@
-import { Hero } from '@/components';
-import { ToolCard } from '@/components/ui';
+import Hero from '@/components/Hero';
+import ToolCard from '@/components/ui/ToolCard';
 import { getFeaturedTools, getTools } from '@/lib/tools';
 
 const Home = async () => {
