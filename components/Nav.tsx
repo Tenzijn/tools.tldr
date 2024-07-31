@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '@/assets/logo.png';
-
+import LoginSignUp from './LoginSignUp';
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
@@ -29,18 +29,11 @@ const Nav = () => {
                 title='Submit a tool'
                 className='font-medium tracking-wide text-slate-100 transition-colors duration-200 hover:text-teal-accent-400'
               >
-                Submit
+                Submit a tool
               </a>
             </li>
             <li>
-              <a
-                href='/'
-                className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-400 hover:bg-sky-700 focus:shadow-outline focus:outline-none'
-                aria-label='account'
-                title='account'
-              >
-                Account
-              </a>
+              <LoginSignUp />
             </li>
           </ul>
           <div className='lg:hidden'>
@@ -107,18 +100,11 @@ const Nav = () => {
                           title='Submit a tool'
                           className='font-medium tracking-wide text-slate-700 transition-colors duration-200 hover:text-sky-400'
                         >
-                          Submit
+                          Submit a tool
                         </a>
                       </li>
                       <li>
-                        <a
-                          href='/'
-                          className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-400 hover:bg-sky-700 focus:shadow-outline focus:outline-none'
-                          aria-label='account'
-                          title='account'
-                        >
-                          Account
-                        </a>
+                        <LoginSignUp />
                       </li>
                     </ul>
                   </nav>
